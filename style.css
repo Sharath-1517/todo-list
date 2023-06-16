@@ -1,0 +1,77 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(to bottom right, #403F44, #1E1B32);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  font-family: sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.todo--list {
+  display: grid;
+  margin: 0 10px;
+  background-color: rgba(255, 255, 255, 0.5215686275);
+  padding: 3rem;
+  gap: 15px;
+  width: min(570px, 90%);
+  border-radius: 5px;
+}
+
+.tasks {
+  max-width: 100%;
+  word-wrap: break-word;
+}
+.tasksList {
+  display: grid;
+  gap: 1rem;
+  list-style: none;
+}
+.tasksList_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  border: 1px solid;
+  padding: 0.3em;
+  border-radius: 5px;
+  overflow-wrap: anywhere;
+}
+.tasksList_item button {
+  font-size: 1rem;
+  padding: 0.3em;
+  border-radius: 5px;
+  width: 105%;
+}
+.tasksInput {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.3em;
+}
+.tasksInput input, .tasksInput button {
+  font-size: 1.5rem;
+  padding: 0.3em;
+  border-radius: 5px;
+}
+.tasksInput button {
+  cursor: pointer;
+}
+.tasksInput input {
+  border: transparent;
+}/*# sourceMappingURL=style.css.map */

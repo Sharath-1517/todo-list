@@ -1,0 +1,79 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(to bottom right, #403F44, #1E1B32);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.todo--list {
+    display: grid;
+    margin: 0 10px;
+    background-color: #ffffff85;
+    padding: 3rem;
+    gap: 15px;
+    width: min(570px, 90%);
+    border-radius: 5px;
+}
+
+.tasks {
+    max-width: 100%;
+    word-wrap: break-word;
+    &List {
+        display: grid;
+        gap: 1rem;
+        list-style: none;
+        &_item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 100%;
+            border: 1px solid ;
+            padding: .3em;
+            border-radius: 5px;
+            overflow-wrap: anywhere;
+            button {
+                font-size: 1rem;
+                padding: .3em;
+                border-radius: 5px;
+                width: 105%;
+            }
+        }
+    }
+
+    &Input {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: .3em;
+        input, button {
+            font-size: 1.5rem;
+            padding: .3em;
+            border-radius: 5px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+        input {
+            border: transparent;
+        }
+    }
+}
