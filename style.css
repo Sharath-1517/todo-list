@@ -33,30 +33,27 @@ main {
   border-radius: 5px;
 }
 
-.tasks {
-  max-width: 100%;
-  word-wrap: break-word;
-}
 .tasksList {
   display: grid;
   gap: 1rem;
-  list-style: none;
 }
 .tasksList_item {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 100%;
   border: 1px solid;
   padding: 0.3em;
   border-radius: 5px;
+}
+.tasksList_item p {
+  width: 90%;
   overflow-wrap: anywhere;
 }
 .tasksList_item button {
   font-size: 1rem;
   padding: 0.3em;
   border-radius: 5px;
-  width: 105%;
+  width: 30%;
 }
 .tasksInput {
   display: flex;
@@ -68,10 +65,18 @@ main {
   font-size: 1.5rem;
   padding: 0.3em;
   border-radius: 5px;
+  width: 100%;
 }
 .tasksInput button {
   cursor: pointer;
+  width: min(150px, 100%);
 }
 .tasksInput input {
   border: transparent;
+}
+
+@media (width < 400px) {
+  html {
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=style.css.map */

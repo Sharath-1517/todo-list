@@ -24,8 +24,9 @@ submit_btn.addEventListener('click', (event) => {
 
 function renderTask(task, index) {
 	const li = document.createElement("li");
+	const p = document.createElement('p');
 	li.classList.add("tasksList_item")
-	li.textContent = task;
+	p.textContent = task;
 	input.value = "";
 
 	const delete_btn = document.createElement('button');
@@ -46,6 +47,7 @@ function renderTask(task, index) {
 		}
 	});
 
+	li.appendChild(p);
 	li.appendChild(delete_btn);
 	tasks_list.appendChild(li);
 }

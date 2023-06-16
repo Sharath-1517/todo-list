@@ -34,26 +34,25 @@ main {
 }
 
 .tasks {
-    max-width: 100%;
-    word-wrap: break-word;
     &List {
         display: grid;
         gap: 1rem;
-        list-style: none;
         &_item {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            max-width: 100%;
             border: 1px solid ;
             padding: .3em;
             border-radius: 5px;
-            overflow-wrap: anywhere;
+            p {
+                width: 90%;
+                overflow-wrap: anywhere;
+            }
             button {
                 font-size: 1rem;
                 padding: .3em;
                 border-radius: 5px;
-                width: 105%;
+                width: 30%;
             }
         }
     }
@@ -67,13 +66,23 @@ main {
             font-size: 1.5rem;
             padding: .3em;
             border-radius: 5px;
+            width: 100%;
         }
 
         button {
             cursor: pointer;
+            width: min(150px, 100%);
         }
         input {
             border: transparent;
         }
     }
+}
+
+html {
+
+    @media (width < 400px) {
+        font-size: 12px;
+    }
+
 }
